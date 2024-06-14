@@ -1,34 +1,33 @@
 # Stock HashTable Management System
 
-## Beschreibung
+## Description
 
-Dieses Programm bietet ein einfaches, aber effektives System zur Verwaltung von Aktieninformationen mit einer Hashtabelle. Es ermöglicht Benutzern, Aktiendaten zu speichern, zu suchen, zu löschen und Kursdaten aus CSV-Dateien zu importieren. Zusätzlich unterstützt das Programm das Plotten der Schlusskurse von Aktien für die letzten 30 Tage in einem ASCII-Diagramm und ermöglicht die Speicherung bzw. das Laden der Hashtabelle in bzw. aus einer Datei.
+This program provides a simple yet effective system for managing stock information using a hash table. It allows users to store, search, delete stock data, and import price data from CSV files. Additionally, the program supports plotting the closing prices of stocks for the last 30 days in an ASCII chart and allows saving and loading the hash table to and from a file.
 
 ## Features
 
-- **Hashing-Verfahren:** Unterstützt drei verschiedene Sondierungsmethoden für die Hashtabelle: quadratische Sondierung, lineare Sondierung und Double Hashing.
-- **CRUD-Operationen:** Ermöglicht das Hinzufügen, Löschen und Suchen von Aktien in der Hashtabelle.
-- **Importieren von Kursdaten:** Unterstützt das Importieren von Aktienkursdaten aus CSV-Dateien.
-- **Datenvisualisierung:** Zeigt die Schlusskurse einer Aktie der letzten 30 Tage in einem ASCII-Diagramm an.
-- **Persistenz:** Ermöglicht das Speichern der Hashtabelle in einer Datei und das Laden aus einer Datei.
+- **Hashing Methods:** Supports three different probing methods for the hash table: quadratic probing, linear probing, and double hashing.
+- **CRUD Operations:** Allows adding, deleting, and searching for stocks in the hash table.
+- **Importing Price Data:** Supports importing stock price data from CSV files.
+- **Data Visualization:** Displays the closing prices of a stock for the last 30 days in an ASCII chart.
+- **Persistence:** Enables saving the hash table to a file and loading it from a file.
 
-## Anleitung
+## Instructions
 
-### Voraussetzungen
+### Requirements
 
-- Python 3.4 oder höher
-- Bibliotheken:  `csv`, `pckile`, `collections.namedtuple`, `assciichart`
+- Python 3.4 or higher
+- Libraries: `csv`, `pickle`, `collections.namedtuple`, `asciichart`
 
-
-### Verwendung
-1. Starten Sie das Programm.
-2. Wählen Sie ein Hashing-Verfahren aus den vorgegebenen Optionen.
-3. Verwenden Sie die folgenden Befehle für verschiedene Operationen:
-   - ADD: Fügt eine neue Aktie hinzu.
-   - DEL: Löscht eine vorhandene Aktie.
-   - IMPORT: Importiert Kursdaten für eine Aktie aus einer CSV-Datei.
-   - SEARCH: Sucht nach einer Aktie und zeigt die neuesten Kursdaten, falls vorhanden.
-   - PLOT: Zeigt die Schlusskurse der letzten 30 Tage für eine Aktie im ASCII-Format.
-   - SAVE <filename>: Speichert die aktuelle Hashtabelle in einer Datei.
-   - LOAD <filename>: Lädt eine Hashtabelle aus einer Datei.
-   - QUIT: Beendet das Programm.
+### Usage
+1. Start the program.
+2. Choose a hashing method from the provided options.
+3. Use the following commands for various operations:
+   - ADD: Adds a new stock.
+   - DEL: Deletes an existing stock.
+   - IMPORT: Imports price data for a stock from a CSV file.
+   - SEARCH: Searches for a stock and displays the latest price data, if available.
+   - PLOT: Displays the closing prices of the last 30 days for a stock in ASCII format.
+   - SAVE <filename>: Saves the current hash table to a file.
+   - LOAD <filename>: Loads a hash table from a file.
+   - QUIT: Exits the program.
